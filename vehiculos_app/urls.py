@@ -26,12 +26,14 @@ router = routers.DefaultRouter()
 router.register(r'vehiculos', views.PropietariosViewSet)
 
 urlpatterns = [
+    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('reportes/', TemplateView.as_view(template_name='reportes/dashboard.html'), name='dashboard'),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('signup/', signup, name='signup'),
     path('admin/', admin.site.urls),
     path('propietario/', include('propietarios.urls')),
     path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^jet/', include('jet.urls', 'jet')),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    path('signup/', signup, name='signup'),
+    path('django_plotly_dash/', include('django_plotly_dash.urls')),
 ]

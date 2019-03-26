@@ -11,6 +11,7 @@ from propietarios.serializers import PropietarioSerializer
 class PropietariosViewSet(viewsets.ModelViewSet):
     serializer_class = PropietarioSerializer
     queryset = VehiculoPropietario.objects.all()
+    pagination_class = None
 
 
 class PropietarioUpdateView(LoginRequiredMixin, UpdateView):
