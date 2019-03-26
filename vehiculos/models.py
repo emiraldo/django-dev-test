@@ -11,6 +11,7 @@ class Marca(models.Model):
 class Modelo(models.Model):
     class Meta:
         unique_together = 'marca', 'nombre'
+        ordering = ['marca__nombre']
 
     marca = models.ForeignKey(Marca, on_delete=models.CASCADE)
     nombre = models.CharField(max_length=100)
