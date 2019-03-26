@@ -1,5 +1,6 @@
-./*/migrations/
-./*/__pycache__/
-./media/
-./static/
-./.idea/
+*/migrations/
+*/__pycache__/
+media/
+static/
+staticfiles/
+.idea/
