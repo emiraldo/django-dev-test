@@ -1,4 +1,4 @@
-*/migrations/
-media/
-static/
-.idea/
+./*/migrations/
+./media/
+./static/
+./.idea/
