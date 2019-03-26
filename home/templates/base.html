@@ -1,0 +1,59 @@
+{% load static %}
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/custom.css' %}">
+</head>
+<body>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">Prueba Desarrollador Python / Django</a>
+            <ul class="right hide-on-med-and-down">
+                {% if user.is_authenticated %}
+                    <li {% if active == 'perfil' %} class="active" {% endif %}>
+                    {% if user.propietario %}
+                        <a href="{% url 'editar-propietario' user.propietario.pk %}">Perfil</a>
+                    {% else %}
+                        <a href="{% url 'crear-propietario' %}">Crear Perfil</a>
+                    {% endif %}
+                    </li>
+                    <li {% if active == 'vehiculos-list' %} class="active" {% endif %}>
+                        <a href="{% url 'vehiculos-list' %}">Mis Vehiculos</a>
+                    </li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'signup' %}">Signup</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container-fluid">
+    {% block content %}
+    {% endblock %}
+</div>
+<footer>
+    <div class="footer-copyright">
+        <p align="center">Desarrollado por <a href="http://audeldiaz.work" target="_blank"
+                                             title="@AudelDiaz">@AudelDiaz</a> para <a href="http://liftit.co"
+                                                                                       title="Liftit" target="_blank">Liftit</a>.
+        </p>
+    </div>
+</footer>
+<script
+        src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+{% block js %}
+{% endblock %}
+</body>
+</html>

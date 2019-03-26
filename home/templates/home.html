@@ -1,0 +1,46 @@
+<!-- templates/home.html-->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+            <a href="/admin" class="btn waves-effect white grey-text darken-text-2">Administrador</a>
+        </div>
+        <div class="carousel-item red white-text" href="#one!">
+            <h2>Backend</h2>
+            <p class="white-text">Django Web Framework</p>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+            <h2>Database</h2>
+            <p class="white-text">PostgreSQL</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+            <h2>API Rest</h2>
+            <p class="white-text">Django Rest Framework</p>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+            <h2>User Views</h2>
+            <p class="white-text">Django Templates</p>
+        </div>
+    </div>
+    <div class="container">
+        <blockquote class="center">
+            Éste sitio te permite registrar y registrar tus vehiculos, fue diseañado como prueba de desarrollador Python
+            / Django para Liftit. <br>
+            Para el ambiente de desarrollo se usó Docker con docker-compose, también se hizo uso del front-end framework
+            Materialize para la maquetación y diseño de las vistas de usuario. <br>
+            Los usuarios de prueba son: propietario / p@ss1234 y admin / p@ss1234.
+        </blockquote>
+        <p></p>
+    </div>
+{% endblock %}
+{% block js %}
+    <script type="application/javascript">
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+    </script>
+{% endblock %}

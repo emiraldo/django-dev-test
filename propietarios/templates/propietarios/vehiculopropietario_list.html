@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Vehiculos{% endblock %}
+
+{% block content %}
+    <div class="row" style="margin-top: 5rem;">
+        <div class="col s12 m8 l8 offset-m2 offset-l2">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title center">Vehiculos Registrados</span>
+                    <table class="highlight responsive-table">
+                        <thead>
+                        <tr>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Tipo</th>
+                            <th>Placa</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        {% for vehiculo in object_list %}
+                            <tr>
+                                <td>{{ vehiculo.modelo.marca }}</td>
+                                <td>{{ vehiculo.modelo.nombre }}</td>
+                                <td>{{ vehiculo.tipo }}</td>
+                                <td>{{ vehiculo.placa }}</td>
+                                <td><a href="{% url 'editar-vehiculo' vehiculo.pk %}" class="btn blue"><i class="material-icons">edit</i></a></td>
+                                <td><a href="{% url 'eliminar-vehiculo' vehiculo.pk %}" class="btn red"><i class="material-icons">delete</i></a></td>
+                            </tr>
+                        {% empty %}
+                            <tr>
+                                <td>No se han registrado vehiculos en tu cuenta.</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a href="{% url 'crear-vehiculo' %}" class="btn-floating btn-large green tooltipped" data-position="left" data-tooltip="Nuevo Vehiculo">
+            <i class="large material-icons">add</i>
+        </a>
+    </div>
+
+{% endblock %}
+{% block js %}
+    <script type="application/javascript">
+        $(document).ready(function () {
+            $('.fixed-action-btn').floatingActionButton();
+        });
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Eliminar Vehiculo{% endblock %}
+
+{% block content %}
+    <div class="row" style="margin-top: 5rem;">
+        <div class="col s12 m8 l8 offset-m2 offset-l2">
+            <form method="post">{% csrf_token %}
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title center">Eliminar Vehiculo</span>
+                        <p>Está seguro que desea eliminar el vehiculo <strong>{{ object.modelo }}</strong> con placa No. <strong>{{ object.placa }}</strong>?</p>
+                    </div>
+                    <div class="card-action">
+                        <input class="btn" type="submit" value="Eliminar">
+                        <a class="btn red" href="{% url 'vehiculos-list' %}">Volver</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
