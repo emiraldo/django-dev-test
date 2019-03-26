@@ -1,0 +1,17 @@
+.errorlist {
+    color: red;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100% !important;
+    padding: 1rem;
+}
+select {
+    display: inline;
+}
+.sidenav-overlay {
+    display: none;
+}

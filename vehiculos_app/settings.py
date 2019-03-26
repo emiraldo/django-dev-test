@@ -139,4 +139,5 @@ REST_FRAMEWORK = {
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 import django_heroku
+
 django_heroku.settings(locals())

@@ -1,0 +1,21 @@
+.errorlist {
+    color: red;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100% !important;
+    padding: 1rem;
+}
+select {
+    display: inline;
+}
+.sidenav-overlay {
+    display: none;
+}
+#main {
+    min-height: 700px;
+}
