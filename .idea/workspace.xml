@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1142a8d-43c1-48dc-a3e6-21cff7f04b8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c1142a8d-43c1-48dc-a3e6-21cff7f04b8d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +265,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553481422239</updated>
-      <workItem from="1553481423807" duration="88858000" />
+      <workItem from="1553481423807" duration="89112000" />
     </task>
     <task id="LOCAL-00001" summary="Ajustes menú logo">
       <created>1553613615592</created>
@@ -333,11 +330,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553655343040</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ajustes subir github">
+      <created>1553657816881</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553657816881</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88858000" />
+    <option name="totallyTimeSpent" value="89112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,16 +354,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18663101" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18663101" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" sideWeight="0.49946523" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" sideWeight="0.49841774" weight="0.3293348" />
       <window_info anchor="bottom" id="Python Console" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49841774" visible="true" weight="0.33151582" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49841774" visible="true" weight="0.33151582" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50158226" side_tool="true" weight="0.33151582" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
@@ -406,7 +409,8 @@
     <MESSAGE value="Ordering modelos por nombre de la marca" />
     <MESSAGE value="view reportes" />
     <MESSAGE value="ajustes CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustes CSS" />
+    <MESSAGE value="ajustes subir github" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes subir github" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/propietarios/__init__.py">
