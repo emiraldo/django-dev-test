@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1142a8d-43c1-48dc-a3e6-21cff7f04b8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/reportes/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/reportes/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos_app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos_app/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home/templates/reportes/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="40" column="60" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="60" />
+            <state relative-caret-position="368">
+              <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
               <folding>
                 <element signature="e#687#705#0#HTML" expanded="true" />
               </folding>
@@ -348,7 +343,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553481422239</updated>
-      <workItem from="1553481423807" duration="78932000" />
+      <workItem from="1553481423807" duration="80048000" />
     </task>
     <task id="LOCAL-00001" summary="Ajustes menú logo">
       <created>1553613615592</created>
@@ -378,11 +373,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553627342148</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="view reportes">
+      <created>1553646826630</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553646826630</updated>
+    </task>
+    <task id="LOCAL-00006" summary="view reportes">
+      <created>1553647922513</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1553647922513</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78932000" />
+    <option name="totallyTimeSpent" value="80048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,13 +407,13 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18663101" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18663101" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" sideWeight="0.49946523" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" sideWeight="0.49841774" weight="0.3293348" />
       <window_info anchor="bottom" id="Python Console" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49841774" visible="true" weight="0.33151582" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49841774" visible="true" weight="0.33151582" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50158226" side_tool="true" weight="0.33151582" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
@@ -449,7 +458,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajustes menú logo" />
     <MESSAGE value="Ordering modelos por nombre de la marca" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ordering modelos por nombre de la marca" />
+    <MESSAGE value="view reportes" />
+    <option name="LAST_COMMIT_MESSAGE" value="view reportes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/propietarios/__init__.py">
@@ -702,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home/templates/reportes/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="60" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="60" />
+        <state relative-caret-position="368">
+          <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
             <element signature="e#687#705#0#HTML" expanded="true" />
           </folding>
