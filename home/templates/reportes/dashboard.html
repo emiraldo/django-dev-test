@@ -4,51 +4,35 @@
 
 {% block content %}
     <div class="row" style="margin-top: 5rem;">
-        <div class="col s12 m6 l6">
+        <div class="col s12 m12 l6">
             <div class="card">
                 <div class="card-content">
-                    <span class="card-title center">Reportes Vehiculos</span>
+                    <span class="card-title center">Cantidad de Vehiculos Registrados por Marca</span>
                     {{ vehiculos_marca | safe }}
-
                 </div>
             </div>
         </div>
-        <div class="col s12 m6 l6">
+        <div class="col s12 m12 l6">
             <div class="card">
                 <div class="card-content">
-                    <span class="card-title center">Reportes Vehiculos</span>
-                    <table id="example" class="display" style="width:100%">
-                        <thead>
-                        <tr>
-                            {% for vehiculo in vehiculos %}
-                                <th>{{ vehiculo }}</th>
-                            {% endfor %}
-                        </tr>
-                        </thead>
-                    </table>
+                    <span class="card-title center">Información Vehiculos Registrados</span>
+                    {{ vehiculos | safe }}
+                </div>
+                <div class="card-action">
+                    <a class="btn" href="/api/vehiculos.csv">Descargar CSV</a>
                 </div>
             </div>
         </div>
     </div>
 {% endblock %}
 {% block js %}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script type="application/javascript">
         $(document).ready(function () {
             $('#tabla-cantidades tr:first th:first').text('Marca');
             $('#tabla-cantidades tr:first th:last').text('Cantidad');
-            $('#example').DataTable({
-                "ajax": "https://devtest-liftit.herokuapp.com/api/vehiculos/",
-                "columns": [
-                    {"data": "id"},
-                    {"data": "propietario_nombres"},
-                    {"data": "propietario_apellidos"},
-                    {"data": "modelo_marca"},
-                    {"data": "modelo_nombre"},
-                    {"data": "tipo_nombre"},
-                    {"data": "placa"}
-                ]
-            });
+            $('#example').DataTable();
         });
     </script>
 {% endblock %}
