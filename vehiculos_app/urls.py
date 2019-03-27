@@ -19,7 +19,7 @@ from django.urls import path, include
 from django.views.generic import TemplateView
 from rest_framework import routers
 
-from home.views import signup
+from home.views import signup, ReportesTemplateView
 from propietarios import views
 
 router = routers.DefaultRouter()
@@ -27,7 +27,7 @@ router.register(r'vehiculos', views.PropietariosViewSet)
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    path('reportes/', TemplateView.as_view(template_name='reportes/dashboard.html'), name='dashboard'),
+    path('reportes/', ReportesTemplateView.as_view(), name='dashboard'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('signup/', signup, name='signup'),
     path('admin/', admin.site.urls),
@@ -35,5 +35,4 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^jet/', include('jet.urls', 'jet')),
-    path('django_plotly_dash/', include('django_plotly_dash.urls')),
 ]

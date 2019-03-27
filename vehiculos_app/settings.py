@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'import_export',
-    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'home',
     'propietarios',
     'vehiculos'
